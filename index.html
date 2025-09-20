@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twix | Artist</title>
+    <style>
+        :root {
+            --primary-bg: #fff;
+            --secondary-bg: #f8f8f8;
+            --text-color: #333;
+            --accent-color: #e06c75; /* A cherry-like red */
+            --font-family-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family-body);
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--primary-bg);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 5%;
+            position: sticky;
+            top: 0;
+            background: var(--primary-bg);
+            z-index: 1000;
+        }
+        
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+
+        section {
+            padding: 6rem 0;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s forwards;
+            animation-delay: 0.2s;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 8rem 0;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #777;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .grid-item {
+            aspect-ratio: 1/1;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.02);
+        }
+
+        .contact-content {
+            text-align: center;
+        }
+
+        .contact-content p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            font-size: 0.8rem;
+            color: #999;
+        }
+        
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Twix</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Art by Twix</h1>
+            <p>idk yet ( ´ ω ` )</p>
+        </section>
+
+        <section id="about">
+            <h2>About me</h2>
+            <div class="contact-content">
+                <p>Hey there! I'm Twix, but you can also call me Cherry. 🍒 I'm a Canadian French artist who plays roblox with my friends and draws alot</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="gallery">
+            <h2>Some of my Artwork</h2>
+            <div class="grid-container">
+                <div class="grid-item" style="background-image: url('https://cdn.discordapp.com/attachments/1410408307385962516/1418766640069349538/Sans_titre_52_20250919211038.png?ex=68cf50e6&is=68cdff66&hm=446fd8a722ef6bb09915fcda6cf8719af7df008d50572b01dff3645dddd71d73&');"></div>
+                <div class="grid-item" style="background-image: url('https://cdn.discordapp.com/attachments/1409302716487958629/1418729304820289676/image.png?ex=68cf2e20&is=68cddca0&hm=49e2fa05bc00aa2235e5c6805579da8ab9cc4f98febc598e2807dc0b4cd53752&');"></div>
+                <div class="grid-item" style="background-image: url('https://cdn.discordapp.com/attachments/1409302716487958629/1418693487351693363/image.png?ex=68cf0cc5&is=68cdbb45&hm=0a3b2400ccf39a5ab5cc023603be0ed89e4bb26692adfc1f2a45d50e912fae24&');"></div>
+                <div class="grid-item" style="background-image: url(https://cdn.discordapp.com/attachments/1410408307385962516/1418772168480657438/rn_image_picker_lib_temp_53c81094-9414-4cd3-b6f6-952992d0fc08.jpg?ex=68cf560c&is=68ce048c&hm=ecc7a52c4bf67479321bb5e4f388b9a7e6f04c35a9210edb23606295b9bd973d&);"></div>
+                <div class="grid-item" style="background-image: url(https://cdn.discordapp.com/attachments/1410408307385962516/1418777599424860294/Sans_titre_10_1.png?ex=68cf5b1b&is=68ce099b&hm=f2b388d3148cbe03c09758dc55a32ed6010c23408048d08cdc99f8bf288a05da&);"></div>
+                <div class="grid-item" style="background-image: url(https://cdn.discordapp.com/attachments/1410408307385962516/1418777599819255958/Untitled16.png?ex=68cf5b1b&is=68ce099b&hm=baa8f30cf704257c86134f6636a6e949bc5071cbd099a04d000bc0fa83676e95&);"></div>
+                <div class="grid-item" style="background-image: url(https://cdn.discordapp.com/attachments/1410408307385962516/1418777598858625124/Untitled17_20250919215525.png?ex=68cf5b1b&is=68ce099b&hm=77ccbd01685e4bb6b776cdddac6f15e1519f11f56116abc3741671ef1f90ace3&);"></div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>My socials</h2>
+            <div class="contact-content">
+                <p>/</p>
+                <!-- Add social media links or a simple contact form here -->
+            </div>
+        </section>
+    </div>
+
+    <footer>
+    <p>Andy_Dev© 2025</p>
+    </footer>
+
+</body>
+</html>
